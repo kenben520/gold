@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="#251E15"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/left_window_view"
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/k_land_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dp_6"
+            android:drawableRight="@drawable/lx_info_list_arrow"
+            android:minHeight="25dp"
+            android:text="@string/app_name"
+            android:textColor="@color/chart_white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/k_land_time_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_5"
+            android:text="07-02 11:00:26"
+            android:textColor="@color/white30"
+            android:textSize="@dimen/sp_11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/k_land_price_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dp_10"
+            android:ellipsize="end"
+            android:lines="1"
+            android:minHeight="25dp"
+            android:text="1343.23"
+            android:textColor="@color/chart_red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/k_land_percent_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="-2.62     2.62%"
+            android:textColor="@color/chart_red"
+            android:textSize="@dimen/sp_11" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/k_land_high_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="最高133"
+            android:textColor="@color/whiteTwo33"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/k_land_low_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="最低133"
+            android:textColor="@color/whiteTwo33"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/k_land_open_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="今开133"
+            android:textColor="@color/whiteTwo33"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/k_land_close_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:text="昨收133"
+            android:textColor="@color/whiteTwo33"
+            android:textSize="@dimen/sp_12" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/k_land_buy_sell_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginRight="@dimen/dp_6">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/k_land_sell_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dp_6"
+                android:background="@drawable/shape_red_circle"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="@string/kSell"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/k_land_sell_px_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:text="13434"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/k_land_buy_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_green_circle"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/k_land_buy_px_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:text="13434"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/kBuy"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/k_land_price_spread_view"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_whitetwo_circle"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="@color/blackTwo"
+            android:textSize="@dimen/sp_11" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@drawable/bg_program_item_live"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_vl"
+            style="@style/verticalLine"
+            android:layout_width="3dp"
+            android:background="@color/mind"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="金银早班车"
+                android:textColor="@color/black1"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:textSize="@dimen/text_size_3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:text="孝正老师"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:00-12:30"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_4" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/tv_live_status"
+            android:layout_width="73dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/lx_list_playing" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/horizontalLine"/>
+
+
+</LinearLayout>

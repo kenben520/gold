@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="80dp"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/calendar_time_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="12:00"
+        android:textColor="@color/warmGreyTwo"
+        android:textSize="@dimen/sp_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/calendar_country_image"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:maxHeight="@dimen/dp_30"
+                android:maxWidth="@dimen/dp_30"
+                android:minHeight="@dimen/dp_20"
+                android:minWidth="@dimen/dp_20" />
+
+            <com.lingxi.preciousmetal.ui.widget.ImageRatingView
+                android:id="@+id/calendar_ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp_7"
+                app:backImage="@drawable/star_unsel_icon"
+                app:frontImage="@drawable/star_sel_icon"
+                app:maxCount="5"
+                app:minStep="0.5"
+                app:rating="0"
+                app:spanSize="0dp"
+                app:touchable="true" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/calendar_title_tex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="美国3月ISM制造业PMI"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+
+            <TextView
+                android:id="@+id/calendar_previous_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="前值：26.8"
+                android:textColor="@color/warmGreyThree"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/calendar_forecast_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="预测值：26.8"
+                android:textColor="@color/warmGreyThree"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/calendar_actual_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="公布值：26.8"
+                android:textColor="@color/warmGreyThree"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

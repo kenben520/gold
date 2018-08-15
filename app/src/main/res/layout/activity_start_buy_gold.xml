@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/add_order_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@mipmap/base_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="18dp">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_15"
+            android:paddingRight="@dimen/dp_15"
+            android:paddingTop="@dimen/dp_5"
+            android:src="@drawable/lx_exchange_market_back" />
+
+        <LinearLayout
+            android:id="@+id/order_detail_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/order_buy_sell_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/orangeyRedTwo"
+                android:padding="@dimen/dp_2"
+                android:text="@string/kBuy"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:id="@+id/order_type_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_2"
+                android:layout_marginRight="@dimen/dp_2"
+                android:background="@color/mind"
+                android:padding="@dimen/dp_2"
+                android:text="挂单"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:id="@+id/order_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="伦敦金"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_16m" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/trade_title_RadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/trade_in_time_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:text="市价交易  "
+                android:textColor="@drawable/text_sle_white_un_fe_color"
+                android:textSize="@dimen/sp_16m" />
+
+            <RadioButton
+                android:layout_width="22dp"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/trade_enter_order_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:button="@null"
+                android:text="挂单交易"
+                android:textColor="@drawable/text_sle_white_un_fe_color"
+                android:textSize="@dimen/sp_16m" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_5"
+                android:src="@drawable/lx_exchange_market_back"
+                android:visibility="invisible" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_market_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height40">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@mipmap/base_title_bg" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/whiteTwo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@drawable/trade_loating_bg"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_6"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:background="@color/whiteTwo"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <TextView
+                android:id="@+id/trade_now_price_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/dp_2"
+                android:text="1343.23"
+                android:textColor="@color/chart_red"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/trade_now_price_percent_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:text="-0.19%"
+                    android:textColor="@color/chart_red"
+                    android:textSize="@dimen/sp_11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/change_good_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:src="@drawable/lx_exchange_market_price_switch" />
+
+                <TextView
+                    android:id="@+id/buy_change_goods_tView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="伦敦金 (LLG)"
+                    android:textColor="@color/blackFF29"
+                    android:textSize="@dimen/sp_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.gxz.PagerSlidingTabStrip
+        android:id="@+id/k_trade_tools_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/whiteColor"
+        android:textColor="@color/FF242424"
+        android:textSize="@dimen/sp_12"
+        app:pstsDividerColor="@android:color/transparent"
+        app:pstsIndicatorColor="@color/yellowC4"
+        app:pstsIndicatorHeight="2dp"
+        app:pstsScaleZoomMax="0"
+        app:pstsShouldExpand="false"
+        app:pstsTabPaddingLeftRight="12dp"
+        app:pstsTextSelectedColor="@color/yellowC4"
+        app:pstsUnderlineColor="#FFD6D6D6"
+        app:pstsUnderlineHeight="1dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/k_trade_main_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3">
+
+        <com.github.tifezh.kchartlib.chart.KMinuteChartView
+            android:id="@+id/minuteChartView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="matrix" />
+
+        <com.github.tifezh.kchartlib.chart.KChartView
+            android:id="@+id/kchart_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_6"
+            android:visibility="gone"
+            app:kc_background_color="@color/whiteColor"
+            app:kc_candle_line_width="1dp"
+            app:kc_candle_solid="false"
+            app:kc_candle_width="4dp"
+            app:kc_grid_line_color="#d0d0d0"
+            app:kc_grid_line_width="0.2dp"
+            app:kc_line_width="@dimen/chart_line_width"
+            app:kc_macd_width="4dp"
+            app:kc_point_width="6dp"
+            app:kc_selected_line_color="#B1B2B6"
+            app:kc_selected_line_width="1dp"
+            app:kc_selector_background_color="#c8d0d0d0"
+            app:kc_selector_text_size="@dimen/chart_selector_text_size"
+            app:kc_tab_background_color="@color/transparent"
+            app:kc_tab_indicator_color="#4473b1"
+            app:kc_tab_text_color="@color/tab_light_text_color_selector"
+            app:kc_text_color="#787878"
+            app:kc_text_size="@dimen/chart_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+</LinearLayout>

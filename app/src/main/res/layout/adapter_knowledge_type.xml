@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/knowledge_type_bg_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_13">
+
+        <TextView
+            android:id="@+id/knowledge_type_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@drawable/lx_home_arrow_to"
+            android:text="基础知识"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sp_17" />
+
+        <TextView
+            android:id="@+id/knowledge_type_content_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="新手必读 带你入门"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/sp_14m" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/knowledge_type_h_view"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/dp_15"  />
+</LinearLayout>
+

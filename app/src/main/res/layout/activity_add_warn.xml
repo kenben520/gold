@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.widget.TopBarView
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@color/gray2"
+                android:gravity="left|center_vertical"
+                android:paddingStart="15dp"
+                android:text="设置品种"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/text_size_5" />
+
+            <View style="@style/horizontalLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btn_gold"
+                    style="@style/tab_type_gold_btn_style"
+                    android:layout_width="173dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="伦敦金"
+                    android:textSize="@dimen/text_size_2" />
+
+                <TextView
+                    android:id="@+id/btn_silver"
+                    style="@style/tab_type_silver_btn_style"
+                    android:layout_width="173dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:text="伦敦银"
+                    android:textSize="@dimen/text_size_2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="参考价格      买："
+                    android:textColor="@color/gray1"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/tv_buy_recommond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1299.41"
+                    android:textColor="@color/mind"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卖："
+                    android:textColor="@color/gray1"
+                    android:layout_marginLeft="19dp"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/tv_sell_recommond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1299.71"
+                    android:textColor="@color/mind"
+                    android:textSize="@dimen/text_size_4" />
+            </LinearLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@color/gray2"
+                android:gravity="left|center_vertical"
+                android:paddingStart="15dp"
+                android:text="基准"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/text_size_5" />
+
+            <View style="@style/horizontalLine" />
+
+
+            <RadioGroup
+                android:id="@+id/radio_group1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdb_1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/selector_radio_btn_bg"
+                    android:button="@null"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_rdb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="11dp"
+                    android:text="以买入价"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_2" />
+
+                <RadioButton
+                    android:id="@+id/rdb_2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="78dp"
+                    android:background="@drawable/selector_radio_btn_bg"
+                    android:button="@null"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_rdb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="11dp"
+                    android:text="以卖出价"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_2" />
+            </RadioGroup>
+
+            <View style="@style/horizontalLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@color/gray2"
+                android:gravity="left|center_vertical"
+                android:paddingStart="15dp"
+                android:text="方向与价格"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/text_size_5" />
+
+            <View style="@style/horizontalLine" />
+
+
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdb_3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/selector_radio_btn_bg"
+                    android:button="@null"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_rdb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="11dp"
+                    android:text="大于等于"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_2" />
+
+                <RadioButton
+                    android:id="@+id/rdb_4"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="78dp"
+                    android:background="@drawable/selector_radio_btn_bg"
+                    android:button="@null"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_rdb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="11dp"
+                    android:text="小于等于"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_2" />
+            </RadioGroup>
+
+            <View
+                style="@style/horizontalLine"
+                android:layout_marginStart="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="21dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="21dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="价格 ($)"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="34dp"
+                    android:orientation="vertical"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/edit_input_money"
+                        style="@style/edit_warn_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="12" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:background="@color/gray2"
+                android:gravity="left|center_vertical"
+                android:paddingStart="15dp"
+                android:text="时效"
+                android:textColor="@color/gray1"
+                android:textSize="@dimen/text_size_5" />
+
+            <View style="@style/horizontalLine" />
+
+
+            <RadioGroup
+                android:id="@+id/radio_group3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdb_5"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/selector_radio_btn_bg"
+                    android:button="@null"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_rdb_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="11dp"
+                    android:text="24小时"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_2" />
+
+                <RadioButton
+                    android:id="@+id/rdb_6"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="47dp"
+                    android:background="@drawable/selector_radio_btn_bg"
+                    android:button="@null"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_rdb_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="11dp"
+                    android:text="7天"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_2" />
+
+                <RadioButton
+                    android:id="@+id/rdb_7"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="47dp"
+                    android:background="@drawable/selector_radio_btn_bg"
+                    android:button="@null"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_rdb_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="11dp"
+                    android:text="15天"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_2" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/selector_button"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/text_size_3" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

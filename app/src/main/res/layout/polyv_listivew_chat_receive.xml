@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/tv_margintop_l"
+        android:text="2016/9/11 10:10:18"
+        android:textColor="@color/bottom_et_color_gray"
+        android:textSize="@dimen/tv_textsize_s"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_margintop_l">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/default_header1" />
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/iv_marginleft_l_l"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_tag_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:text="老师"
+                    android:gravity="center"
+                    android:background="@drawable/background_yellow4"
+                    android:textColor="@color/whiteTwo"
+                    android:textSize="9dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="助教 小浩浩"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_1" />
+
+                <TextView
+                    android:id="@+id/tv_send_time_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="10:15"
+                    android:textColor="@color/warmGrey"
+                    android:textSize="@dimen/text_size_1" />
+            </LinearLayout>
+
+
+            <pl.droidsonroids.gif.GifSpanTextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/common_margin"
+                android:background="@drawable/bg_corner_shape_w4"
+                android:gravity="center_vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="这是一条很长的信息这是一条很长的信息这是一条很长的信息这是一条很长的信息这是一条很长的信息这是一条很长的信息这是一条很长的信息这是一条很长的信息"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/text_size_4" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

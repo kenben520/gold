@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="品种"
+            android:textColor="@color/mind"
+            android:textSize="@dimen/sp_15m" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="净多头"
+            android:textColor="@color/mind"
+            android:textSize="@dimen/sp_15m" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="净空头"
+            android:textColor="@color/mind"
+            android:textSize="@dimen/sp_15m" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日期"
+            android:textColor="@color/mind"
+            android:textSize="@dimen/sp_15m" />
+    </LinearLayout>
+
+    <com.lingxi.preciousmetal.ui.widget.MyListView
+        android:id="@+id/goods_buy_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="纽约期金"
+            android:textColor="@color/ff33"
+            android:textSize="@dimen/sp_16m" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="123456"
+            android:textColor="@color/FF4A3C2F"
+            android:textSize="@dimen/sp_16m" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="123456"
+            android:textColor="@color/FF4A3C2F"
+            android:textSize="@dimen/sp_16m" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="123456"
+            android:textColor="#FF808080"
+            android:textSize="@dimen/sp_16m" />
+    </LinearLayout>
+</LinearLayout>

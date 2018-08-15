@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="@drawable/k_more_bg_icon"
+        android:gravity="center"
+        android:minWidth="120dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="0dp"
+            app:cardCornerRadius="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/k_type_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/k_change_top_state"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/candle_icon"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:gravity="center"
+                        android:text="图表类型"
+                        android:textColor="@drawable/text_normal_black_whitle_color"
+                        android:textSize="@dimen/sp_14m" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/k_warning_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/k_change_center_state"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/k_warning_icon"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:gravity="center"
+                        android:text="预警设置"
+                        android:textColor="@drawable/text_normal_black_whitle_color"
+                        android:textSize="@dimen/sp_14m" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/k_rule_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/k_change_center_state"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/k_rule_icon"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:gravity="center"
+                        android:text="合约细则"
+                        android:textColor="@drawable/text_normal_black_whitle_color"
+                        android:textSize="@dimen/sp_14m" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/k_solid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/k_change_down_state"
+                    android:gravity="center"
+                    android:minHeight="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/k_solid_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:gravity="center"
+                        android:text="空心阳线"
+                        android:textColor="@drawable/text_normal_black_whitle_color"
+                        android:textSize="@dimen/sp_14m" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

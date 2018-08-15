@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    android:background="@color/brownishGreyTwo"
+    android:gravity="center_vertical"
+    android:paddingTop="21dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+        //返回箭头
+
+        <ImageView
+            android:id="@+id/iv_left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+        //标题
+
+        <TextView
+            android:id="@+id/tv_title_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/appTextGray"
+            android:textSize="@dimen/sp_18" />
+        //右侧图标
+
+        <ImageView
+            android:id="@+id/iv_rightIco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+        //右侧文字
+
+        <TextView
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/sp_18"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.lingxi.preciousmetal"
+        minSdkVersion 19
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true
+            }
+        }
+        multiDexEnabled true
+        ndk {
+            abiFilters  'armeabi'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "fc6376c321d9aa6111fe9ae4", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+        dexOptions {
+            javaMaxHeapSize "4g"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+//        main {
+//            res.srcDirs =
+//                    [
+//                            'src/main/res-poly'
+//                    ]
+//        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.github.lovetuzitong:MultiImageSelector:1.2'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.github.Othershe:CalendarView:1.2.1'
+    implementation 'com.gxz.pagerslidingtabstrip:library:1.3.1'
+    implementation 'me.zhanghai.android.materialratingbar:library:1.2.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-4'
+    implementation 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    implementation 'com.jaeger.statusbarutil:library:1.5.0'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation 'cn.jiguang.sdk:jpush:3.1.3'
+    implementation 'cn.jiguang.sdk:jcore:1.2.1'
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+    implementation 'com.zhy:autolayout:1.4.3'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    implementation 'com.umeng.sdk:common:latest.integration'
+//    implementation 'com.umeng.sdk:utdid:1.1.5.3'
+    implementation 'com.umeng.sdk:analytics:latest.integration'
+    implementation project(path: ':kchartlib')
+    implementation project(':common')
+    implementation project(':biz')
+    implementation project(':banner')
+    implementation project(':polylib')
+    implementation project(':kefu-easeui')
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'ru.noties:scrollable:1.3.0'
+    implementation 'org.adw.library:discrete-seekbar:1.0.1'
+    implementation 'com.android.support:cardview-v7:26.3.1'
+
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.flyco.roundview:FlycoRoundView_Lib:1.1.2@aar'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:1.5.0@aar'
+    implementation 'com.contrarywind:Android-PickerView:4.1.6'
+}

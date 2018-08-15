@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.widget.TopBarView
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="存入账号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/tv_user_account"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/warmGrey"
+                    android:textSize="@dimen/text_size_4" />
+            </LinearLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账号姓名"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/warmGrey"
+                    android:textSize="@dimen/text_size_4" />
+            </LinearLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="存款货币"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="USD"
+                    android:textColor="@color/warmGrey"
+                    android:textSize="@dimen/text_size_4" />
+            </LinearLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="入金银行卡"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_bank_cd_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/text_size_4" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:background="@color/whiteFour" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="入金金额（$）"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <EditText
+                    android:id="@+id/edit_deposit_money_usd"
+                    style="@style/edit_deposit_money"
+                    android:layout_width="130dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|right"
+                    android:hint="点击输入金额"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxWidth="100dp" />
+            </RelativeLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="支付金额（¥）"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/tv_tips1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|left"
+                    android:text="汇率6.4"
+                    android:textColor="@color/warmGrey"
+                    android:textSize="@dimen/text_size_4" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+
+                    <TextView
+                        android:id="@+id/tv_deposit_money_rmb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|right"
+                        android:text="0.00"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_4" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View style="@style/horizontalLine" />
+
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="55dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="29dp"
+                android:background="@drawable/background_yellow1"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/text_size_3" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

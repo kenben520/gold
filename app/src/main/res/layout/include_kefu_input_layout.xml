@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_pic"
+                android:layout_width="19dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/lx_service_pic" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_marginLeft="12dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_corner_shape_gray3"
+            android:layout_weight="1">
+
+            <com.lingxi.preciousmetal.ui.widget.MsgEditText
+                android:id="@+id/et_talk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent"
+                android:hint=""
+                android:singleLine="true"
+                android:maxLength="40"
+                android:textColor="@color/warmGrey"
+                android:textColorHint="@color/warmGrey"
+                android:textSize="@dimen/tv_textsize" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_emoswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_emoswitch"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/polyv_iv_emo_pressed" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/iv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14dp"
+            android:textColor="@color/gray10"
+            android:text="发送"
+            android:textSize="@dimen/text_size_2"/>
+    </LinearLayout>
+
+</merge>
+

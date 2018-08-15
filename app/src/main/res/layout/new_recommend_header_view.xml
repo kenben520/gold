@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_header_view"
+    android:layout_width="match_parent"
+    android:layout_height="140dp">
+
+    <com.youth.banner.Banner
+        android:id="@+id/news_banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:image_scale_type="fit_xy"
+        app:indicator_drawable_selected="@drawable/lx_home_banner_seleted"
+        app:indicator_drawable_unselected="@drawable/lx_home_banner_noselected"
+        app:indicator_height="5dp"
+        app:indicator_margin="2dp"
+        app:indicator_width="13dp"
+        app:title_background="@color/black50" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="top|center"
+        android:lines="1"
+        android:paddingTop="@dimen/dp_5"
+        android:text="测试"
+        android:textColor="@color/whiteColor"
+        android:textSize="@dimen/sp_16m" />
+</RelativeLayout>

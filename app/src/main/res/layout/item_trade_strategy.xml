@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corner_shape_w1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="19dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/bg_circle_y1" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray10"
+                android:textSize="@dimen/text_size_5" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/category_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:singleLine="true"
+                android:text="当前交易策略"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+
+        <com.lingxi.preciousmetal.ui.widget.ExpandableTextView
+            android:id="@+id/tv_content1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="11dp"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.4"
+            android:text="哈哈哈哈哈哈哈，快来玩贪玩蓝月，我又赚1000美金。"
+            android:textColor="@color/brownishGreyTwo"
+            android:textSize="@dimen/text_size_4" />
+
+
+        <!--<com.lingxi.preciousmetal.ui.widget.expandtextview.ExpandTextView-->
+        <!--android:id="@+id/tv_content1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="21dp"-->
+        <!--android:layout_marginTop="11dp"-->
+        <!--android:textColor="@color/brownishGreyTwo"-->
+        <!--app:contentTextSize="@dimen/text_size_4"-->
+        <!--app:expandHint="点击展开"-->
+        <!--app:foldHint="点击收回"-->
+        <!--app:textContentColor="@color/brownishGreyTwo"-->
+        <!--app:textHintColor="@color/warmGrey"/>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/layout_expand"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:visibility="gone">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="right"-->
+        <!--android:text="展开"-->
+        <!--android:textColor="@color/warmGrey"-->
+        <!--android:textSize="@dimen/text_size_4" />-->
+        <!--</LinearLayout>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="18dp"
+            android:numColumns="3" />
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/layout_collapse"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:visibility="gone">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:gravity="right"-->
+        <!--android:text="收起"-->
+        <!--android:textColor="@color/warmGrey"-->
+        <!--android:textSize="@dimen/text_size_4" />-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+    <View
+        style="@style/horizontalLine"
+        android:layout_height="9dp"
+        android:background="#F5F6F7"></View>
+</LinearLayout>

@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/FFF5F5F5"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingRight="@dimen/dp_15">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_18"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/analyze_icon"
+            android:drawablePadding="@dimen/dp_5"
+            android:text="客户多空比例"
+            android:textColor="@color/ff33"
+            android:textSize="@dimen/sp_16m" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup_indicator_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="21dp"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/indicator_oneDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/db_analyse_day"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:minWidth="70dp"
+                    android:text="过去24小时"
+                    android:textColor="@drawable/text_normal_white_yellow_color"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/indicator_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/db_analyse_all"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:minWidth="70dp"
+                    android:text="总开仓"
+                    android:textColor="@drawable/text_normal_white_yellow_color"
+                    android:textSize="11sp" />
+            </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_15">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_3"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/whiteColor"
+            app:cardCornerRadius="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.lingxi.preciousmetal.ui.widget.CustomCircleProgressBar
+                    android:id="@+id/analyse_gd_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:direction="top"
+                    app:inside_color="@color/kWhiteGreen"
+                    app:max_progress="100"
+                    app:name="伦敦金"
+                    app:outside_color="@color/kWhiteRed"
+                    app:outside_radius="40dp"
+                    app:progress="10"
+                    app:progress_text_color="@color/ff33"
+                    app:progress_text_size="@dimen/sp_17"
+                    app:progress_width="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/analyse_gd_up_color_view"
+                        style="@style/position_card_layout_style" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="多头"
+                        android:textColor="@color/ff33"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <TextView
+                        android:id="@+id/analyse_gd_up_percent_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="60%"
+                        android:textSize="@dimen/sp_14m" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/analyse_gd_loss_color_view"
+                        style="@style/position_card_layout_style" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="空头"
+                        android:textColor="@color/ff33"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <TextView
+                        android:id="@+id/analyse_gd_loss_percent_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="60%"
+                        android:textSize="@dimen/sp_14m" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/whiteColor"
+            app:cardCornerRadius="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.lingxi.preciousmetal.ui.widget.CustomCircleProgressBar
+                    android:id="@+id/analyse_sd_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:direction="top"
+                    app:inside_color="@color/kWhiteGreen"
+                    app:max_progress="100"
+                    app:name="伦敦银"
+                    app:outside_color="@color/kWhiteRed"
+                    app:outside_radius="40dp"
+                    app:progress="10"
+                    app:progress_text_color="@color/ff33"
+                    app:progress_text_size="@dimen/sp_17"
+                    app:progress_width="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/analyse_sd_up_color_view"
+                        style="@style/position_card_layout_style" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="多头"
+                        android:textColor="@color/ff33"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <TextView
+                        android:id="@+id/analyse_sd_up_percent_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="60%"
+                        android:textSize="@dimen/sp_14m" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/analyse_sd_loss_color_view"
+                        style="@style/position_card_layout_style" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="空头"
+                        android:textColor="@color/ff33"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <TextView
+                        android:id="@+id/analyse_sd_loss_percent_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:text="60%"
+                        android:textSize="@dimen/sp_14m" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>

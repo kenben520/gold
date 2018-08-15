@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp">
+
+        <ImageView
+            android:id="@+id/study_video_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:maxHeight="100dp"
+            android:minHeight="72dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/study_video_name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_12"
+            android:text="老师"
+            android:singleLine="true"
+            android:textColor="@color/ff33"
+            android:textSize="@dimen/text_size_4" />
+    </LinearLayout>
+</LinearLayout>

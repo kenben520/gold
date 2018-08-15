@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.widget.TopBarView
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <com.lingxi.preciousmetal.ui.widget.verticalTabView.TabView
+            android:id="@+id/tabView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tab_tabViewGravity="left"
+            app:tab_tabViewDefaultPosition="1"
+            app:tab_tabViewBackgroundColor="@color/white">
+
+        </com.lingxi.preciousmetal.ui.widget.verticalTabView.TabView>
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.widget.TopBarView
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.lingxi.preciousmetal.ui.widget.CommonItemView
+        android:id="@+id/item_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.lingxi.preciousmetal.ui.widget.CommonItemView
+        android:id="@+id/item_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.lingxi.preciousmetal.ui.widget.CommonItemView
+        android:id="@+id/item_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.lingxi.preciousmetal.ui.widget.CommonItemView
+        android:id="@+id/item_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <com.lingxi.preciousmetal.ui.widget.CommonItemView
+        android:id="@+id/item_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

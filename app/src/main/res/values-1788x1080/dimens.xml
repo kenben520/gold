@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="height40">49dp</dimen>
+    <dimen name="padTop21">15dp</dimen>
+    <dimen name="padTop27">20dp</dimen>
+    <dimen name="height1">30dp</dimen>
+
+</resources>

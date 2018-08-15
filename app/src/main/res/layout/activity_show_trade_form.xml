@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.widget.TopBarView
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/rl_modifyInf"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/whiteTwo">
+
+        <EditText
+            android:id="@+id/et_inf"
+            style="@style/show_trade_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="start"
+            android:hint="请留下你的交易心得"
+            android:lineSpacingExtra="8dp"
+            android:padding="16dp"
+            android:textColor="@color/warmGrey" />
+
+        <TextView
+            android:id="@+id/tv_len_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:text="0/30"
+            android:textColor="@color/warmGrey"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <View style="@style/horizontalLine" />
+
+    <RelativeLayout
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:layerType="software">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_upload1"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/background_yellow1"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/whiteTwo"
+        android:textSize="@dimen/text_size_3" />
+</LinearLayout>

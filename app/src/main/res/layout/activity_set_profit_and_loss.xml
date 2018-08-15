@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.widget.TopBarView
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lx_exchange_setting_pending" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建仓价"
+                    android:textColor="@color/grayFf9"
+                    android:textSize="@dimen/sp_14m" />
+
+                <TextView
+                    android:id="@+id/order_price_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1313.1"
+                    android:textColor="@color/mind"
+                    android:textSize="@dimen/sp_17" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp_0.5"
+            android:layout_height="@dimen/dp_40"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/lx_exchange_setting_current_price" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="现价"
+                    android:textColor="@color/grayFf9"
+                    android:textSize="@dimen/sp_14m" />
+
+                <TextView
+                    android:id="@+id/order_now_price_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1313.1"
+                    android:textColor="@color/mind" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_8"
+        android:background="@color/line" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_19"
+        android:gravity="center"
+        android:text="止盈价"
+        android:textColor="@color/blackFF29"
+        android:textSize="@dimen/sp_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="@dimen/dp_15">
+
+        <include
+            android:id="@+id/profit_layout"
+            layout="@layout/public_input_hand_layout" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_win_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_8"
+        android:gravity="center"
+        android:text="范围($): ≤ 1311.62 预计盈亏($): --"
+        android:textColor="@color/grayFf9"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="止损价"
+        android:textColor="@color/blackFF29"
+        android:textSize="@dimen/sp_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="@dimen/dp_15">
+
+        <include
+            android:id="@+id/loss_layout"
+            layout="@layout/public_input_hand_layout" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_loss_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="范围($): ≥ 1315.62 预计盈亏($): --"
+        android:textColor="@color/grayFf9"
+        android:textSize="@dimen/sp_12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="修改止盈/止损价，参考范围以现价为准"
+        android:textColor="@color/yellowC4"
+        android:textSize="@dimen/sp_12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/profit_loss_sure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/lx_exchange_market_price_button_bg"
+        android:gravity="center"
+        android:text="确认设置"
+        android:textColor="@color/whiteTwo"
+        android:textSize="@dimen/sp_16m" />
+</LinearLayout>

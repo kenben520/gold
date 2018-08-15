@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="80dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/expert_comment_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/morning_comment_icon" />
+
+        <TextView
+            android:id="@+id/expert_time_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/expert_comment_imageview"
+            android:layout_centerHorizontal="true"
+            android:minHeight="@dimen/dp_20"
+            android:textColor="@color/whiteTwo"
+            android:textSize="@dimen/sp_12" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/expert_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="黄金回头望月"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/expert_content_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:text="昨日随着美元强势反弹，全球金融市场风险偏好重燃，黄金在盘中触及近六周高位后大跌逾...>>"
+            android:textColor="@color/warmGreyThree"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+
+</LinearLayout>

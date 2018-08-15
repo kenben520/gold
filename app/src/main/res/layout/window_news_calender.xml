@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AA000000"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteTwo"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteTwo"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/dp_50">
+
+                <ImageView
+                    android:id="@+id/calendar_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="@dimen/dp_10"
+                    android:src="@mipmap/left_arrow_icon" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18" />
+
+                <ImageView
+                    android:id="@+id/calendar_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/dp_10"
+                    android:src="@mipmap/right_arrow_icon" />
+
+            </RelativeLayout>
+
+            <com.othershe.calendarview.weiget.WeekView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                calendarview:week_size="14"
+                calendarview:week_str="周日.周一.周二.周三.周四.周五.周六" />
+
+            <com.othershe.calendarview.weiget.CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                calendarview:choose_color="@color/G2"
+                calendarview:choose_type="single"
+                calendarview:holiday_color="@color/G2"
+                calendarview:lunar_color="@color/G2"
+                calendarview:solar_color="@color/G2"
+                calendarview:day_bg="@drawable/solid_light_mind"
+                calendarview:show_holiday="true"
+                calendarview:show_lunar="false"
+                calendarview:show_term="true"
+                calendarview:switch_choose="false" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/choose_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

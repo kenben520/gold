@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.adapter.ViewPagerSlide
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/line" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/homeTbaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whiteColor"
+        tl:tl_iconHeight="20dp"
+        tl:tl_iconWidth="22dp"
+        tl:tl_textsize="9sp"
+        tl:tl_underline_color="#DDDDDD"
+        tl:tl_underline_height="1dp"  />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/hand_minus_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lx_exchange_market_price_minus" />
+
+    <EditText
+        android:id="@+id/hand_input_edText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/lx_exchange_market_grey"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/sp_16m" />
+
+    <ImageView
+        android:id="@+id/hand_plus_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lx_exchange_market_price_plus" />
+</LinearLayout>

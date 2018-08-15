@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AA000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteTwo"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="23dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="时间"
+            android:textColor="@color/blackFF29"
+            android:textSize="@dimen/sp_18" />
+
+        <include layout="@layout/public_window_time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="类型"
+            android:textColor="@color/blackFF29"
+            android:textSize="@dimen/sp_18" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/money_type1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dp_7"
+                android:layout_weight="1"
+                android:background="@drawable/db_sel_yellow_un_white_2"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="出金"
+                android:textColor="@drawable/text_sle_white_un_fe_color" />
+
+            <RadioButton
+                android:id="@+id/money_type2_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_7"
+                android:layout_weight="1"
+                android:background="@drawable/db_sel_yellow_un_white_2"
+                android:button="@null"
+                android:gravity="center"
+                android:text="入金"
+                android:textColor="@drawable/text_sle_white_un_fe_color" />
+
+            <RadioButton
+                android:id="@+id/money_type3_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_7"
+                android:layout_weight="1"
+                android:background="@drawable/db_sel_yellow_un_white_2"
+                android:button="@null"
+                android:gravity="center"
+                android:text="点差返还"
+                android:textColor="@drawable/text_sle_white_un_fe_color" />
+
+            <RadioButton
+                android:id="@+id/money_type5_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_7"
+                android:layout_weight="1"
+                android:background="@drawable/db_sel_yellow_un_white_2"
+                android:button="@null"
+                android:gravity="center"
+                android:text="平仓盈亏"
+                android:textColor="@drawable/text_sle_white_un_fe_color" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteTwo"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/w_close_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="取消" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="match_parent"
+                android:background="@color/line" />
+
+            <TextView
+                android:id="@+id/w_sure_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/mind" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

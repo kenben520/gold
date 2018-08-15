@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="90dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/news_type_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/morning_comment_icon" />
+
+        <TextView
+            android:id="@+id/news_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/news_type_imageview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:textColor="@color/mind" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/news_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:text="黄金回头望月"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <LinearLayout
+            android:id="@+id/calendar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.lingxi.preciousmetal.ui.widget.ImageRatingView
+                android:id="@+id/market_ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:frontImage="@drawable/star_sel_icon"
+                app:backImage="@drawable/star_unsel_icon"
+                app:rating="0"
+                app:spanSize="0dp"
+                app:minStep="0.5"
+                app:maxCount="5"
+                app:touchable="true" />
+
+            <TextView
+                android:id="@+id/finance_value_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:gravity="center_vertical"
+                android:text="前值：2.6"
+                android:textColor="@color/warmGreyThree"
+                android:textSize="@dimen/sp_14" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detail_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="2"
+            android:text="昨日随着美元强势反弹，全球金融市场风险偏好重燃，黄金在盘中触及近六周高位后大跌逾...>>"
+            android:textColor="@color/warmGreyThree"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</LinearLayout>

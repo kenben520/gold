@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray8"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:id="@+id/fl_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whiteTwo"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/include_kefu_input_layout" />
+
+        <RelativeLayout
+            android:id="@+id/rl_bot"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vp_layout_height"
+            android:background="@color/top_layout_color_white"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_bot"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/iv_wh"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/common_margin_tb"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_page1"
+                    style="@style/PageView" />
+
+                <ImageView
+                    android:id="@+id/iv_page2"
+                    style="@style/PageView" />
+
+                <ImageView
+                    android:id="@+id/iv_page3"
+                    style="@style/PageView"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_page4"
+                    style="@style/PageView"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_page5"
+                    style="@style/PageView"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_emo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/ll_bot" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+        <!--android:id="@+id/refreshLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:srlEnableFooterFollowWhenLoadFinished="true"-->
+        <!--app:srlEnableScrollContentWhenLoaded="true">-->
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/chat_swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fl_bot">
+        <ListView
+            android:id="@+id/lv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdgeLength="0dp"
+            android:fastScrollEnabled="false"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="2dp"
+            android:transcriptMode="normal"></ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_above="@+id/fl_bot">-->
+
+        <!--<ListView-->
+            <!--android:id="@+id/lv_chat"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:cacheColorHint="@android:color/transparent"-->
+            <!--android:divider="@null"-->
+            <!--android:fadingEdgeLength="0dp"-->
+            <!--android:fastScrollEnabled="false"-->
+            <!--android:scrollbars="none"-->
+            <!--android:listSelector="@android:color/transparent"-->
+            <!--android:paddingBottom="2dp"-->
+            <!--android:transcriptMode="normal"></ListView>-->
+
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

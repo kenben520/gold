@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_tabview"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:gravity="center">
+        <LinearLayout
+            android:id="@+id/tabview_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" />
+</ScrollView>

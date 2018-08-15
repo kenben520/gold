@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:enabled="false"
+        android:text="聊天室"
+        android:textColor="@color/plate_live_tab_item_textcolor"
+        android:textSize="@dimen/text_size_2" />
+
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:includeFontPadding="false"
+        android:enabled="false"
+        android:textColor="@color/plate_live_tab_item_textcolor"
+        android:textSize="@dimen/text_size_6" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/expandable_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="21dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="4dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/brownishGreyTwo"
+        android:textSize="@dimen/text_size_4" />
+
+    <TextView
+        android:id="@+id/expand_collapse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingTop="10dp"
+        android:text="@string/commonui_expand"
+        android:textColor="@color/warmGrey"
+        android:textSize="@dimen/text_size_4"
+        android:visibility="gone" />
+</merge>

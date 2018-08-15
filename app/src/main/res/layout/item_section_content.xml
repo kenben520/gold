@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40.5dp"
+    android:background="@color/whiteColor"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_40"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="C"
+        android:textColor="@color/warmGreyTwo"
+        android:textSize="@dimen/sp_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_0.5"
+        android:background="@color/line" />
+</LinearLayout>

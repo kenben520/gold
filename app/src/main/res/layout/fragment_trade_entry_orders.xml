@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/myScrollingContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="36dp"
+                android:layout_marginTop="@dimen/padTop21"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="80dp"
+                        android:text="挂单方向"
+                        android:textColor="@color/blackFF29"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <RadioGroup
+                        android:id="@+id/direction_RadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/buy_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/db_sel_green_un_white_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/kSell"
+                            android:textColor="@drawable/db_radio_hand_text_color" />
+
+                        <RadioButton
+                            android:id="@+id/sell_radio"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/db_sel_green_un_white_bg"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="@string/kBuy"
+                            android:textColor="@drawable/db_radio_hand_text_color" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padTop27"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="80dp"
+                        android:text="挂单价格"
+                        android:textColor="@color/blackFF29"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/entrust_price_view"
+                            layout="@layout/public_input_hand_layout" />
+
+                        <TextView
+                            android:id="@+id/tv_rang_price_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="范围($):≥ 1315.73 或 ≤ 1311.73"
+                            android:textColor="@color/grayFf9"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padTop21">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="80dp"
+                        android:text="挂单手数"
+                        android:textColor="@color/blackFF29"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/entrust_volume_view"
+                            layout="@layout/public_input_hand_layout" />
+
+                        <TextView
+                            android:id="@+id/tv_deposit_tips"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="占用保证金($):0%  可用保证金($):0.00"
+                            android:textColor="@color/grayFf9"
+                            android:textSize="@dimen/sp_12" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/padTop21"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="80dp"
+                        android:text="有效期"
+                        android:textColor="@color/blackFF29"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <RadioGroup
+                        android:id="@+id/entry_order_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/today_radio_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/db_sel_yellow_un_white_bg"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="今日"
+                            android:textColor="@drawable/db_radio_hand_text_color" />
+
+                        <RadioButton
+                            android:id="@+id/week_radio_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/db_sel_yellow_un_white_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="本周"
+                            android:textColor="@drawable/db_radio_hand_text_color" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/entry_order_sure_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height40"
+                android:layout_marginTop="@dimen/padTop21"
+                android:background="@drawable/bg_button_2"
+                android:gravity="center"
+                android:text="确认挂单"
+                android:textColor="@color/whiteTwo"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

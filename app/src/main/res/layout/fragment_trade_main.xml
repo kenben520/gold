@@ -1,0 +1,9 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/trade_un_login" layout="@layout/fragment_trade_un_login" />
+
+    <include android:id="@+id/trade_login" layout="@layout/fragment_trade_user_info" />
+
+</FrameLayout>

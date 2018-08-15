@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="100dp"
+    android:orientation="horizontal"
+    android:paddingLeft="22dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_0.5"
+            android:layout_height="23dp"
+            android:layout_gravity="center"
+            android:background="@color/line" />
+
+        <View
+            android:layout_width="@dimen/dp_6"
+            android:layout_height="@dimen/dp_6"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_yellow_bg" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_0.5"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quick_new_time_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:background="@drawable/shape_gray_bg"
+            android:gravity="center"
+            android:minWidth="66dp"
+            android:paddingLeft="@dimen/dp_9"
+            android:paddingRight="@dimen/dp_9"
+            android:text="14:08:59"
+            android:textColor="@color/gray10"
+            android:textSize="@dimen/sp_12" />
+
+        <TextView
+            android:id="@+id/quick_new_title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_13"
+            android:gravity="left"
+            android:textColor="@color/ff33"
+            android:textSize="@dimen/text_size_2" />
+
+        <LinearLayout
+            android:id="@+id/flash_market_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_18"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/flash_good_news_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_white_bg_red_border_circle"
+                android:paddingLeft="7dp"
+                android:paddingRight="@dimen/dp_7"
+                android:text="利多：欧元"
+                android:textColor="@color/FFFB3B3B"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/flash_bad_news_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:background="@drawable/shape_white_bg_green_border_circle"
+                android:paddingLeft="7dp"
+                android:paddingRight="@dimen/dp_7"
+                android:text="利空：美元"
+                android:textColor="@color/FF0DA206"
+                android:textSize="@dimen/sp_12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/flash_value_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_14"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/flash_front_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="前值 : 2%"
+                android:textColor="@color/ff33"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/flash_expect_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="预期 : 2.50%"
+                android:textColor="@color/ff33"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/flash_actual_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="实际值 : 2.70%"
+                android:textColor="@color/FFFB3B3B"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

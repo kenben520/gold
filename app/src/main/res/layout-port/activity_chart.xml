@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/k_title_port_view"
+        layout="@layout/k_title_port_layout" />
+
+    <include
+        android:id="@+id/k_title_land_view"
+        layout="@layout/k_title_land_layout"
+        android:visibility="gone" />
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tl_22"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="@color/chart_red"
+        android:visibility="gone"
+        tl:tl_textAllCaps="true"
+        tl:tl_textBold="BOTH"
+        tl:tl_textsize="14sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp2"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/k_time_title_land_layout"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/M251E15"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="@color/black" />
+
+            <ListView
+                android:id="@+id/k_time_title_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/black"
+                android:dividerHeight="@dimen/dp_1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_6"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/whiteColor">
+
+            <com.github.tifezh.kchartlib.chart.KMinuteChartView
+                android:id="@+id/kMinuteChartView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="matrix" />
+
+            <com.github.tifezh.kchartlib.chart.KChartView
+                android:id="@+id/kchart_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:kc_background_color="@color/transparent"
+                app:kc_candle_line_width="1dp"
+                app:kc_candle_solid="false"
+                app:kc_candle_width="4dp"
+                app:kc_grid_line_color="#d0d0d0"
+                app:kc_grid_line_width="0.2dp"
+                app:kc_line_width="@dimen/chart_line_width"
+                app:kc_macd_width="4dp"
+                app:kc_point_width="6dp"
+                app:kc_selected_line_color="#B1B2B6"
+                app:kc_selected_line_width="1dp"
+                app:kc_selector_background_color="#c8d0d0d0"
+                app:kc_selector_text_size="@dimen/chart_selector_text_size"
+                app:kc_tab_background_color="@color/transparent"
+                app:kc_tab_indicator_color="#4473b1"
+                app:kc_tab_text_color="@color/tab_light_text_color_selector"
+                app:kc_text_color="#787878"
+                app:kc_text_size="@dimen/chart_text_size" />
+
+            <ImageView
+                android:id="@+id/change_screen_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/dp_50"
+                android:layout_marginRight="@dimen/dp_20"
+                android:src="@drawable/change_screen_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/k_buy_sell_port_layout"
+        layout="@layout/public_buy_or_sell_layout"
+        android:background="@color/whiteColor" />
+</LinearLayout>

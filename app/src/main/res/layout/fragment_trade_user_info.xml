@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lx_exchange_home_topbg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_30"
+            android:textColor="@color/whiteTwo"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lx_exchange_home_float"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="浮动盈亏($)"
+                    android:textColor="@color/black80"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:id="@+id/my_profit_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:text="0.00"
+                    android:textColor="@color/green"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_add_trade"
+                android:layout_width="75dp"
+                android:layout_height="31dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/background_yellow6"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_add_trade"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/whiteTwo"
+                    android:textSize="@dimen/text_size_2"
+                    android:layout_marginStart="2dp"
+                    android:text="下单"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="可用保证金"
+                android:textColor="@color/black80"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保证金比例"
+                android:textColor="@color/black80"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="净值"
+                android:textColor="@color/black80"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/my_margin_tView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="0.00"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_17" />
+
+            <TextView
+                android:id="@+id/my_margin_ratio_tView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="0.00"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_17" />
+
+            <TextView
+                android:id="@+id/my_balance_tView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lines="1"
+                android:text="0.00"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_17" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.gxz.PagerSlidingTabStrip
+        android:id="@+id/trade_main_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:textColor="@color/warmGreyTwo"
+        android:textSize="@dimen/sp_16"
+        app:pstsDividerColor="@color/transparent"
+        app:pstsIndicatorColor="@color/mind"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsScaleZoomMax="0"
+        android:background="@color/FFf7f7f7"
+        app:pstsShouldExpand="true"
+        app:pstsSmoothScrollWhenClickTab="false"
+        app:pstsTabPaddingLeftRight="12dp"
+        app:pstsTextSelectedColor="@color/mind"
+        app:pstsUnderlineColor="@color/warmGrey30"
+        app:pstsUnderlineHeight="0dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/trade_main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/lx_exchange_home_add_neworder" />
+    </RelativeLayout>
+
+
+</LinearLayout>

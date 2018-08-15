@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/w_start_time_view"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="起始时间"
+                android:textColor="@color/time_filter_text_textcolor"
+                android:textSize="15dp" />
+
+            <View style="@style/horizontalLine"
+                android:id="@+id/line_start_time"
+                android:background="@drawable/bg_time_filter_text_line"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="18dp"
+            android:text="至"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginRight="18dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/w_end_time_view"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:gravity="center"
+                android:text="截至时间"
+                android:textColor="@color/time_filter_text_textcolor"
+                android:textSize="15dp" />
+
+            <View
+                android:id="@+id/line_end_time"
+                style="@style/horizontalLine"
+                android:background="@drawable/bg_time_filter_text_line"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragmen_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        />
+    <LinearLayout
+        android:id="@+id/time_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/time_today_radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/db_sel_yellow_un_white_2"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_1"
+            android:text="当日"
+            android:textColor="@drawable/text_sle_white_un_fe_color" />
+
+        <Button
+            android:id="@+id/time_week_radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/db_sel_yellow_un_white_2"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_1"
+            android:text="近一周"
+            android:textColor="@drawable/text_sle_white_un_fe_color" />
+
+        <Button
+            android:id="@+id/time_month_radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="@dimen/text_size_1"
+            android:layout_weight="1"
+            android:background="@drawable/db_sel_yellow_un_white_2"
+            android:button="@null"
+            android:gravity="center"
+            android:text="近一月"
+            android:textColor="@drawable/text_sle_white_un_fe_color" />
+
+        <Button
+            android:id="@+id/time_year_radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:background="@drawable/db_sel_yellow_un_white_2"
+            android:button="@null"
+            android:gravity="center"
+            android:text="近一年"
+            android:textColor="@drawable/text_sle_white_un_fe_color" />
+    </LinearLayout>
+
+
+</LinearLayout>

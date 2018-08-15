@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.widget.TopBarView
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="21dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="净值（美元）"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="@dimen/text_size_1" />
+
+                        <TextView
+                            android:id="@+id/tv_date"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="2018/04/03"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="@dimen/text_size_1" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_total_property"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="11dp"
+                        android:gravity="center"
+                        android:text="0.00"
+                        android:textColor="@color/mind"
+                        android:textSize="25dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="17dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="已用保证金（美元）"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="@dimen/text_size_1" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="可用保证金（美元）"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="@dimen/text_size_1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:id="@+id/tv_deposit_already_used"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:text="0.00"
+                            android:textColor="@color/mind"
+                            android:textSize="16.5dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_deposit_available"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical|left"
+                                android:text="0.00"
+                                android:textColor="@color/mind"
+                                android:textSize="16.5dp" />
+
+                            <TextView
+                                android:id="@+id/tv_deposit_credit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="6dp"
+                                android:includeFontPadding="false"
+                                android:gravity="center_vertical|left"
+                                android:text="(含信用额0.00)"
+                                android:textColor="@color/warmGrey"
+                                android:textSize="@dimen/text_size_1" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:background="@color/whiteFour" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="18dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="浮动盈亏（美元）"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_4" />
+
+                        <TextView
+                            android:id="@+id/tv_floating_pl"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="0.00"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="@dimen/text_size_4" />
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="18dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="余额（美元）"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_4" />
+
+                        <TextView
+                            android:id="@+id/tv_balance"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="0.00"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="@dimen/text_size_4" />
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="18dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="保证金比例"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_4" />
+
+                        <TextView
+                            android:id="@+id/tv_deposit_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00%"
+                            android:textColor="@color/rustyOrange"
+                            android:textSize="@dimen/text_size_4" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:text="及时入金可避免强平损失"
+                            android:textColor="@color/warmGrey"
+                            android:textSize="@dimen/text_size_4" />
+                    </LinearLayout>
+
+                    <View style="@style/horizontalLine" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_watch_propery_sheet_list"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/selector_button"
+                android:gravity="center"
+                android:text="查看资产报表"
+                android:enabled="true"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/text_size_3"
+                android:layout_alignParentBottom="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/btn_withdraw"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_corner_shape_stroke_y4"
+                    android:gravity="center"
+                    android:text="出金"
+                    android:textColor="@color/rustyOrange"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/btn_deposit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_yellow1"
+                    android:gravity="center"
+                    android:text="入金"
+                    android:textColor="@color/whiteTwo"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/ProgressBar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/empty_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="110dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/empty_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_empty_content" />
+
+                    <TextView
+                        android:id="@+id/empty_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="33dp"
+                        android:text="@string/empty_content_tips"
+                        android:textColor="@color/beige"
+                        android:textSize="12.8dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include
+                layout="@layout/include_empty_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.widget.TopBarView
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="请选择时间范围"
+        android:textColor="@color/warmGrey"
+        android:layout_marginStart="15dp"
+        android:textSize="@dimen/text_size_6"
+        android:layout_marginBottom="11dp"
+        />
+
+    <include layout="@layout/public_window_time_new"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="请选择类型"
+        android:textColor="@color/warmGrey"
+        android:layout_marginStart="15dp"
+        android:textSize="@dimen/text_size_6"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/money_type1_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_7"
+            android:layout_weight="1"
+            android:background="@drawable/db_sel_yellow_un_white_2"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_1"
+            android:text="出金"
+            android:textColor="@drawable/text_sle_white_un_fe_color" />
+
+        <Button
+            android:id="@+id/money_type2_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_weight="1"
+            android:background="@drawable/db_sel_yellow_un_white_2"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_1"
+            android:text="入金"
+            android:textColor="@drawable/text_sle_white_un_fe_color" />
+
+        <Button
+            android:id="@+id/money_type3_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_weight="1"
+            android:background="@drawable/db_sel_yellow_un_white_2"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_1"
+            android:text="点差返还"
+            android:textColor="@drawable/text_sle_white_un_fe_color" />
+
+        <Button
+            android:id="@+id/money_type5_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_1"
+            android:background="@drawable/db_sel_yellow_un_white_2"
+            android:button="@null"
+            android:gravity="center"
+            android:text="平仓盈亏"
+            android:textColor="@drawable/text_sle_white_un_fe_color" />
+    </LinearLayout>
+
+</LinearLayout>

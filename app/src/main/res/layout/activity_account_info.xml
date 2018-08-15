@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <com.lingxi.preciousmetal.ui.widget.TopBarView
+        android:id="@+id/topbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_audit_success"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteTwo"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/whiteFour" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="持卡人姓名"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_4" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/text_size_4" />
+                </LinearLayout>
+
+                <View style="@style/horizontalLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="身份证号码"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_4" />
+
+                    <TextView
+                        android:id="@+id/tv_idcard_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/text_size_4" />
+                </LinearLayout>
+
+                <View style="@style/horizontalLine" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:background="@color/whiteFour" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开户银行"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_4" />
+
+                    <TextView
+                        android:id="@+id/tv_bank_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="建设银行"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/text_size_4" />
+                </LinearLayout>
+
+                <View style="@style/horizontalLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行账号"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_4" />
+
+                    <TextView
+                        android:id="@+id/tv_bank_cd_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/text_size_4" />
+                </LinearLayout>
+
+                <View style="@style/horizontalLine" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="所属支行"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_4" />
+
+                    <TextView
+                        android:id="@+id/tv_bank_branch_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="建设银行广州江南支行"
+                        android:textColor="@color/warmGrey"
+                        android:textSize="@dimen/text_size_4" />
+                </LinearLayout>
+
+                <View style="@style/horizontalLine" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="19dp"
+                    android:gravity="left"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="温馨提示：若需要更改【客户姓名】，【证件号码】，【银行卡】等内容，请联系在线客服"
+                    android:textColor="@color/rustyOrange"
+                    android:textSize="@dimen/text_size_1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <include
+            layout="@layout/activity_account_info_audit_fail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            layout="@layout/activity_account_info_auditing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>

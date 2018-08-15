@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ScrollLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dip"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:padding="3.0dip"
+            android:src="@drawable/guide_round" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_end_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="105dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_corner_shape_y3"
+                android:gravity="center"
+                android:text="开户"
+                android:layout_weight="1"
+                android:textColor="@color/whiteTwo"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="105dp"
+                android:layout_height="34dp"
+                android:background="@drawable/bg_corner_shape_black3"
+                android:gravity="center"
+                android:text="登录"
+                android:layout_marginLeft="@dimen/dp_13"
+                android:layout_weight="1"
+                android:textColor="@color/whiteTwo"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_goto_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DD9148"
+            android:textSize="@dimen/dp_14"
+            android:autoLink="all"
+            android:layout_marginTop="30dp"
+            android:text="随便逛逛>"/>
+    </LinearLayout>
+</RelativeLayout>

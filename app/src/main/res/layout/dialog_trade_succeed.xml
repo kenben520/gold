@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/w_close_succeed"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/lx_ad_exit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/bg_corner_shape_w1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/bg_corner_trade_success_header"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_trade_success"
+                    android:layout_marginRight="6dp"/>
+
+                <TextView
+                    android:id="@+id/w_trade_title_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易成功"
+                    android:textColor="@color/whiteTwo"
+                    android:textSize="@dimen/text_size_10" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="21dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="订单号"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="@color/grayFf9"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/bg_dashed3"
+                        android:layerType="software"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/order_id_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="#5445779"
+                    android:textColor="@color/blackFF29"
+                    android:textSize="@dimen/sp_14m" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="交易价格($)"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="@color/grayFf9"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/bg_dashed3"
+                        android:layerType="software"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/order_price_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blackFF29"
+                    android:textSize="@dimen/sp_14m" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="交易手数"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="@color/grayFf9"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/bg_dashed3"
+                        android:layerType="software"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/order_vol_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blackFF29"
+                    android:textSize="@dimen/sp_14m" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="占用保证金($)"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="@color/grayFf9"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/bg_dashed3"
+                        android:layerType="software"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/order_margin_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blackFF29"
+                    android:textSize="@dimen/sp_14m" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="止盈价($)"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="@color/grayFf9"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/bg_dashed3"
+                        android:layerType="software"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/order_profit_price_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="#5445779"
+                    android:textColor="@color/blackFF29"
+                    android:textSize="@dimen/sp_14m" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="止损价($)"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="@color/grayFf9"
+                        android:textSize="@dimen/sp_14m" />
+
+                    <View
+                        android:layout_width="34dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:background="@drawable/bg_dashed3"
+                        android:layerType="software"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/order_loss_price_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/blackFF29"
+                    android:textSize="@dimen/sp_14m" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0.5"
+                android:layout_marginTop="27dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/my_trade_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="查看持仓"
+                    android:textColor="@color/blackFF66"
+                    android:textSize="@dimen/sp_15" />
+
+                <View
+                    android:layout_width="@dimen/dp_0.5"
+                    android:layout_height="match_parent"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:id="@+id/set_profit_loss_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="设置止盈止损"
+                    android:textColor="@color/yellowC4"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!--<item name="android:listViewStyle">@style/listViewBaseStyle</item>-->
+        <item name="android:scrollbarTrackVertical">@android:color/transparent</item>
+        <item name="android:scrollbarTrackHorizontal">@android:color/transparent</item>
+        <item name="android:scrollbarSize">3dp</item>
+        <item name="windowActionBar">false</item>
+        <!--<item name="android:buttonStyle">@style/buttonStyle</item>-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+</resources>

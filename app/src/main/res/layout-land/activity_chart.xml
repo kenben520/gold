@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#251E15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="22dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/dp_6"
+                android:drawableRight="@drawable/lx_info_list_arrow"
+                android:minHeight="25dp"
+                android:text="@string/app_name"
+                android:textColor="@color/chart_white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/k_time_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="07-02 11:00:26"
+                android:textColor="@color/white30"
+                android:textSize="@dimen/sp_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="@dimen/dp_10"
+                android:minHeight="25dp"
+                android:text="1343.23"
+                android:textColor="@color/chart_red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="-2.62     2.62%"
+                android:textColor="@color/chart_red"
+                android:textSize="@dimen/sp_11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/k_max_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="最高133"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/k_low_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center"
+                android:text="最低133"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/k_today_open_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="今开133"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/k_yesterday_close_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center"
+                android:text="昨收133"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/sp_16" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="match_parent"  />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.tifezh.kchartlib.chart.KMinuteChartView
+                android:id="@+id/kMinuteChartView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:scaleType="matrix" />
+
+            <com.github.tifezh.kchartlib.chart.KChartView
+                android:id="@+id/kchart_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                app:kc_background_color="@color/whiteTwo"
+                app:kc_candle_line_width="1dp"
+                app:kc_candle_solid="false"
+                app:kc_candle_width="4dp"
+                app:kc_grid_line_color="#d0d0d0"
+                app:kc_grid_line_width="0.2dp"
+                app:kc_line_width="@dimen/chart_line_width"
+                app:kc_macd_width="4dp"
+                app:kc_point_width="6dp"
+                app:kc_selected_line_color="#B1B2B6"
+                app:kc_selected_line_width="1dp"
+                app:kc_selector_background_color="#c8d0d0d0"
+                app:kc_selector_text_size="@dimen/chart_selector_text_size"
+                app:kc_tab_background_color="@color/transparent"
+                app:kc_tab_indicator_color="#4473b1"
+                app:kc_tab_text_color="@color/tab_light_text_color_selector"
+                app:kc_text_color="#787878"
+                app:kc_text_size="@dimen/chart_text_size"/>
+
+            <ImageView
+                android:id="@+id/change_screen_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="70dp"
+                android:layout_marginRight="@dimen/dp_30"
+                android:background="@drawable/lx_quotes_to_portrait_btn" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

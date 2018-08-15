@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_unlogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/bg_unlogin_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_trade_unlogin_banner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/bg_button_2"
+                android:gravity="center"
+                android:text="立即开户"
+                android:textColor="@color/whiteTwo"
+                android:textSize="@dimen/text_size_3" />
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="1dp"
+                app:cardElevation="0dp">
+
+                <TextView
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_corner_shape_stroke_y5"
+                    android:gravity="center"
+                    android:text="登录交易"
+                    android:textColor="@color/mind"
+                    android:textSize="@dimen/text_size_3" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

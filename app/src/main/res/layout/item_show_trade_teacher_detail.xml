@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="80dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <include layout="@layout/include_item_teacher_show_trade_head" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/title1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:includeFontPadding="false"
+                            android:text="淘汰狼"
+                            android:textColor="@color/black1"
+                            android:textSize="@dimen/text_size_6" />
+
+                        <TextView
+                            android:id="@+id/win_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/mind"
+                            android:textSize="@dimen/text_size_4" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="2018-05-03 13:41"
+                        android:textColor="@color/warmGreyThree"
+                        android:textSize="@dimen/text_size_5" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/ic_auditing" />
+
+        <View
+            style="@style/horizontalLine"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"></View>
+    </LinearLayout>
+</LinearLayout>

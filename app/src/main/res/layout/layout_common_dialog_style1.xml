@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <RelativeLayout
+      android:layout_width="280dp"
+      android:layout_height="194dp"
+      android:layout_gravity="center"
+      android:background="@drawable/bg_nowifi">
+
+      <LinearLayout
+          android:id="@+id/lay_dialog_msg"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="92dp"
+          android:orientation="vertical">
+
+          <TextView
+              android:id="@+id/dialog_msg"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:lineSpacingExtra="3dp"
+              android:lineSpacingMultiplier="1.0"
+              android:paddingLeft="23dp"
+              android:paddingRight="23dp"
+              android:text="当前为非wifi环境，是否使用流量观看视频?"
+              android:textColor="@color/black1"
+              android:textSize="@dimen/text_size_2" />
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:id="@+id/layout_bottom"
+          android:layout_width="match_parent"
+          android:layout_height="43dp"
+          android:orientation="horizontal"
+          android:layout_alignParentBottom="true">
+
+          <TextView
+              android:id="@+id/dialog_cancel"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:maxLines="1"
+              android:text="取消"
+              android:textSize="15dp"
+              android:textColor="@color/y1"
+              android:visibility="gone" />
+
+          <TextView
+              android:id="@+id/dialog_commit"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:maxLines="1"
+              android:text="反 馈"
+              android:textSize="15dp"
+              android:textColor="@color/whiteTwo"
+              android:visibility="gone" />
+
+      </LinearLayout>
+
+  </RelativeLayout>
+</LinearLayout>

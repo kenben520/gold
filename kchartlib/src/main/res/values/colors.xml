@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="chart_red">#DF3536</color>
+    <color name="chart_green">#35DF7E</color>
+    <color name="chart_gray">#222222</color>
+
+    <color name="chart_line_1">#00bfe2</color>
+    <color name="chart_line_2">#ffa000</color>
+    <color name="chart_line_3">#ff00fb</color>
+    <color name="chart_line_4">#0056ff</color>
+    <color name="chart_line_5">#8b00ff</color>
+    <color name="chart_line_6">#1800ff</color>
+
+    <color name="chart_white">#fff</color>
+
+    <color name="chart_background">#202326</color>
+    <color name="chart_grid_line">#353941</color>
+    <color name="chart_text">#B1B2B6</color>
+    <color name="chart_selector">#c830343C</color>
+    <color name="chart_tab_background">#30343C</color>
+    <color name="chart_tab_indicator">#FF6601</color>
+
+    <color name="nowPxLineColor">#FFC4C6C9</color>
+    <color name="nowPxBgColor">#FFCA731F</color>
+    <color name="downPxColor">#FF545454</color>
+
+    <color name="kWhiteRed">#FB3B3B</color>
+    <color name="kWhiteGreen">#0DA206</color>
+    <color name="kWhiteNormal">#9d9d9d</color>
+
+    <color name="kWhiteRed20">#30FB3B3B</color>
+    <color name="kWhiteGreen20">#300DA206</color>
+
+    <color name="kBlackRed">#fd2222</color>
+    <color name="kBlackGreen">#07d524</color>
+    <color name="kBlackNormal">#777573</color>
+
+    <!--白底：红FB3B3B，绿0DA206，停滞9d9d9d.    黑底：红fd2222 ，绿07d524. 停滞777573-->
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteTwo"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/news_calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:scaleType="centerInside"
+            android:src="@mipmap/news_calendar_icon" />
+
+        <View
+            android:layout_width="@dimen/dp_0.5"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/line" />
+
+        <RadioGroup
+            android:id="@+id/calendar_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/calendar_text1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="周四\n412"
+                android:textColor="@drawable/db_radio_calendar_text_color"
+                android:textSize="@dimen/sp_14" />
+
+            <RadioButton
+                android:id="@+id/calendar_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="周四\n412"
+                android:textColor="@drawable/db_radio_calendar_text_color"
+                android:textSize="@dimen/sp_14" />
+
+            <RadioButton
+                android:id="@+id/calendar_text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="周四\n412"
+                android:textColor="@drawable/db_radio_calendar_text_color"
+                android:textSize="@dimen/sp_14" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="@dimen/dp_0.5"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/line" />
+
+        <ImageView
+            android:id="@+id/news_filter_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:scaleType="centerInside"
+            android:src="@mipmap/calendar_filter_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/line" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableFooterFollowWhenLoadFinished="true"
+        app:srlEnableScrollContentWhenLoaded="true">
+
+        <ListView
+            android:id="@+id/news_main_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:dividerHeight="0.5dp"
+            android:overScrollMode="never" />
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

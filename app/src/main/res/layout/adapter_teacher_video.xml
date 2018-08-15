@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        app:cardCornerRadius="@dimen/dp_5"
+        app:cardElevation="@dimen/dp_3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/teach_video_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxHeight="100dp"
+                    android:minHeight="72dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/teach_video_time_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/lx_video_matte"
+                    android:gravity="right"
+                    android:paddingRight="6dp"
+                    android:singleLine="true"
+                    android:text="2019"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="@dimen/sp_12" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/teach_video_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginRight="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_5"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:lines="1"
+                android:singleLine="true"
+                android:text="标题"
+                android:textColor="@color/ff33"
+                android:textSize="@dimen/sp_15m" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginRight="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/teach_video_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详情"
+                    android:textColor="@color/FF999999"
+                    android:textSize="@dimen/sp_13" />
+
+                <com.flyco.roundview.RoundTextView
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    app:rv_backgroundColor="@color/FF999999"
+                    app:rv_cornerRadius="1.5dp" />
+
+                <TextView   android:text="详情"
+                    android:id="@+id/teach_video_add_time_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/FF999999"
+                    android:textSize="@dimen/sp_13" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

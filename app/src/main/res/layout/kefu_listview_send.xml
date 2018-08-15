@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/tv_margintop_l"
+        android:text="2016/9/11 10:10:18"
+        android:textColor="@color/bottom_et_color_gray"
+        android:textSize="@dimen/tv_textsize_s"
+        android:visibility="gone" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp">
+
+        <ImageView
+            android:id="@+id/iv_userhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/default_header1"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/iv_userhead"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_send_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:text="10:15"
+                    android:textColor="@color/warmGrey"
+                    android:textSize="@dimen/text_size_1" />
+
+                <TextView
+                    android:id="@+id/tv_sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张大号"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_1" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <LinearLayout
+                android:id="@+id/bubble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                >
+                <TextView
+                    android:id="@+id/tv_chatcontent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_corner_shape_y2"
+                    android:gravity="center_vertical"
+                    android:maxWidth="260dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="这是一条很长的信息这是一条很长的信息这是一条很长的信息这是一条很长的信息这是一条很长的信息这是一条很长的信息这是一条很长的信息"
+                    android:textColor="@color/black1"
+                    android:textSize="@dimen/text_size_2" />
+            </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/msg_status"
+                    android:layout_width="@dimen/iv_height_s"
+                    android:layout_height="@dimen/iv_height_s"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:layout_toLeftOf="@id/bubble"
+                    android:src="@drawable/polyv_iv_resend"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/common_margin"
+                    android:layout_toLeftOf="@id/msg_status"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

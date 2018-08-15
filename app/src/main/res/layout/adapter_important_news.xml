@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="50dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/important_title_textVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/greyishBrown"
+        android:textSize="@dimen/text_size_normal" />
+
+    <TextView
+        android:id="@+id/important_time_textVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/warmGreyFour"
+        android:textSize="@dimen/text_size_small" />
+
+    <View
+        android:id="@+id/divider" style="@style/horizontalLine"></View>
+</LinearLayout>
